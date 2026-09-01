@@ -52,6 +52,6 @@ INNER JOIN clientes c ON p.id_cliente = c.id_cliente
 INNER JOIN itens_pedido i ON p.id_pedido = i.id_pedido
 GROUP BY p.id_pedido, c.nome, p.data_pedido, p.status
 ORDER BY total DESC;
-
+```
 ### Resultado da Consulta no MySQL Workbench:
 ![Resultado da Consulta](resultado.png)
