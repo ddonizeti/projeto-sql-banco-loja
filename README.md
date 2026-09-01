@@ -40,6 +40,7 @@ O sistema possui 4 tabelas interligadas:
 ## Exemplo de Consulta Analítica
 Consulta para identificar o cliente, data e o **valor total** de cada pedido:
 
+```sql
 SELECT 
     p.id_pedido,
     c.nome AS cliente,
@@ -47,10 +48,7 @@ SELECT
     p.status,
     SUM(i.quantidade * i.preco_unitario) AS total
 FROM pedidos p
-
 INNER JOIN clientes c ON p.id_cliente = c.id_cliente
 INNER JOIN itens_pedido i ON p.id_pedido = i.id_pedido
-
 GROUP BY p.id_pedido, c.nome, p.data_pedido, p.status
-
 ORDER BY total DESC;
