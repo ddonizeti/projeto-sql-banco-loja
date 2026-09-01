@@ -31,7 +31,7 @@ O sistema possui 4 tabelas interligadas:
 
 ## Conceitos e Comandos Praticados
 * Definir **Chaves Primárias (PRIMARY KEY)** e **Chaves Estrangeiras (FOREIGN KEY)**.
-* Filtragem e ordenação de resultados com **`WHERE` e `ORDER BY`.***
+* Filtragem e ordenação de resultados com **`WHERE` e `ORDER BY`.**
 * Junção de múltiplas tabelas usando **`INNER JOIN`.**
 * Agrupamento e relatórios financeiros usando **`GROUP BY` e funções de agregação (`SUM`).**
 
